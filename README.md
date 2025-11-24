@@ -131,7 +131,7 @@ After testing, the most dependable approach was:
 ### Prerequisites
 
   * Python 3.10+
-  * Google API Key (with access to `gemini-2.0-flash`)
+  * Google API Key 
 
 ### Installation
 
@@ -142,10 +142,10 @@ After testing, the most dependable approach was:
     ```
 
 2.  **Environment Configuration:**
-    Create a `.env` file in the root directory:
+    Update the `.env` file with your api key:
 
     ```env
-    GOOGLE_API_KEY=your_api_key_here
+    GOOGLE_API_KEY=YOUR_API_KEY
     ```
 
 ## Usage
