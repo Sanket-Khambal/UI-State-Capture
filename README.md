@@ -195,5 +195,5 @@ Introducing a small state graph linking actions, UI observations, and transition
 
 ### 5. Richer Dataset Metadata
 
-The current dataset is fully structured and consistent, but adding additional metadata—latency per action, DOM node diffs, semantic descriptions—would make it even more valuable for training downstream UI agents.
+The current dataset is fully structured and consistent, but adding additional metadata like latency per action, DOM node diffs, semantic descriptions would make it even more valuable for training downstream UI agents.
 
