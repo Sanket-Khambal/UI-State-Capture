@@ -128,19 +128,37 @@ After testing, the most dependable approach was:
 
 ## Running the System
 
-### 1. Set Environment Variables
+### Prerequisites
 
-```
-export GOOGLE_API_KEY=your_key_here
-```
+  * Python 3.10+
+  * Google API Key (with access to `gemini-2.0-flash`)
 
-### 2. Run the Program
+### Installation
 
-```
+1.  **Install dependencies:**
+
+    ```bash
+    pip install browser-use pydantic python-dotenv langchain-google-genai
+    ```
+
+2.  **Environment Configuration:**
+    Create a `.env` file in the root directory:
+
+    ```env
+    GOOGLE_API_KEY=your_api_key_here
+    ```
+
+## Usage
+
+Run the main script to execute the test suite defined in the `main` function.
+
+```bash
 python main.py
 ```
 
-### 3. Log in Manually When Prompted
+The system will spin up a browser instance (non-headless by default so you can watch/interact) and iterate through the task list.
+
+Log in Manually When Prompted
 
 The agent will automatically pause if authentication is required.
 
@@ -196,4 +214,3 @@ Introducing a small state graph linking actions, UI observations, and transition
 ### 5. Richer Dataset Metadata
 
 The current dataset is fully structured and consistent, but adding additional metadata like latency per action, DOM node diffs, semantic descriptions would make it even more valuable for training downstream UI agents.
-
