@@ -148,8 +148,6 @@ After testing, the most dependable approach was:
     GOOGLE_API_KEY=YOUR_API_KEY
     ```
 
-## Usage
-
 Run the main script to execute the test suite defined in the `main` function.
 
 ```bash
