@@ -73,7 +73,7 @@ At every step:
 
 ### 3. Human-in-the-Loop Login Handling
 
-Automating login flows across SaaS apps like Notion, Linear, or GitHub was brittle and unnecessary. Instead, the system:
+Automating login flows would require storing credentials or navigating complex OAuth flows. Instead, I architected the system to pause execution and let humans handle authentication, which is both more secure and more practical. So, the system:
 
 * Detects when the agent encounters a login page
 * Pauses execution
