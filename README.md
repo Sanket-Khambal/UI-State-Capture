@@ -179,7 +179,7 @@ This project prioritizes end-to-end functionality across real apps, but there ar
 
 ### 1. Stronger Generalization
 
-Currently, the system works across multiple apps without hardcoding, but a proper abstraction for UI states—combining DOM structure, semantic cues, and vision signals—would make it easier to scale to new apps and reduce reliance on screenshot-after-action logic.
+Currently, the system works across multiple apps without hardcoding, but a proper abstraction for UI states combining DOM structure, semantic cues, and vision signals which would make it easier to scale to new apps and reduce reliance on screenshot-after-action logic.
 
 ### 2. Improved State-Change Detection
 
@@ -193,11 +193,7 @@ Adding a lightweight timeline view that shows each step, the action taken, and w
 
 Introducing a small state graph linking actions, UI observations, and transitions would allow the system to avoid loops, recognize repeated states, and produce cleaner workflow datasets.
 
-### 5. Broader UI Edge-Case Support
-
-Future improvements would expand support for canvas-heavy apps (like Figma or Miro), dynamic hydration delays, and multi-pane interfaces, along with fallback vision-based detection when DOM access is unreliable.
-
-### 6. Richer Dataset Metadata
+### 5. Richer Dataset Metadata
 
 The current dataset is fully structured and consistent, but adding additional metadata—latency per action, DOM node diffs, semantic descriptions—would make it even more valuable for training downstream UI agents.
 
